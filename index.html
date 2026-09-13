@@ -156,6 +156,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     .envelope-img {
@@ -189,7 +190,7 @@
     }
 
     .letter-card.extracted {
-      transform: translateY(-80px) scale(1.25);
+      transform: translateY(-80px) scale(1.15);
       z-index: 5;
       box-shadow: 0 20px 30px rgba(0,0,0,0.25);
     }
@@ -382,12 +383,12 @@
     </div>
 
     <div class="page page-left">
-      <div class="envelope-container">
-        <div class="letter-card" id="letterCard" onclick="toggleLetter(event)">
+      <div class="envelope-container"> onclick="toggleLetter(event)">
+        <div class="letter-card" id="letterCard" 
           <img src="Your paragraph text (1).png" alt="Letter Text">
         </div>
         <img class="envelope-img" src="Your paragraph text (2).png" alt="Envelope">
-        <div class="click-hint">Tap letter to read / tuck back</div>
+        <div class="click-hint">Tap envelope to read</div>
       </div>
     </div>
 
